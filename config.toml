@@ -1,5 +1,5 @@
 title = "Redd"
-#baseURL = "https://reddtsai.github.io"
+baseURL = "https://reddtsai.github.io"
 languageCode = "zh-tw"
 theme = "ananke"
 
