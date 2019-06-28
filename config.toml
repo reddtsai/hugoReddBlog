@@ -1,4 +1,4 @@
-title = "Redd"
+title = "Redd Tsai"
 baseURL = "https://reddtsai.github.io"
 languageCode = "zh-tw"
 theme = "ananke"
@@ -13,7 +13,7 @@ Paginate = 3 # this is set low for demonstrating with dummy content. Set to a hi
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
-  #filename = "sitemap.xml"
+  filename = "sitemap.xml"
 
 [params]
   favicon = "favicon-16x16.ico"
