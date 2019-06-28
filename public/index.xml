@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Redd Tsai&#39;s Blog on Redd Tsai</title>
+    <link>https://reddtsai.github.io/</link>
+    <description>Recent content in Redd Tsai&#39;s Blog on Redd Tsai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 26 Jun 2019 18:14:32 +0800</lastBuildDate>
+    
+	<atom:link href="https://reddtsai.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello</title>
+      <link>https://reddtsai.github.io/posts/hello/</link>
+      <pubDate>Wed, 26 Jun 2019 18:14:32 +0800</pubDate>
+      
+      <guid>https://reddtsai.github.io/posts/hello/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
