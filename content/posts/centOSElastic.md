@@ -1,7 +1,6 @@
 ---
 title: "CentOS 7 如何安裝 Elasticsearch"
 date: 2019-06-27T14:37:52+08:00
-draft: true
 toc: true
 ---
 
