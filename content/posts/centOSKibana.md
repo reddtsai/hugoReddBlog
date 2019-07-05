@@ -2,6 +2,7 @@
 title: "CentOS 7 如何安裝 Kibana"
 date: 2019-06-27T14:38:02+08:00
 toc: true
+tags: ["ELK"]
 ---
 
 <!--more-->
@@ -64,7 +65,7 @@ server.host: 0.0.0.0
 sudo firewall-cmd --new-zone=kibana --permanent
 sudo firewall-cmd --reload
 sudo firewall-cmd --zone=kibana --add-source=<IP_ADDRESS>/32 --permanent
-sudo firewall-cmd --zone=kibana --add-port=9200/tcp --permanent
+sudo firewall-cmd --zone=kibana --add-port=5601/tcp --permanent
 sudo firewall-cmd --reload
 ```
 
@@ -73,6 +74,14 @@ sudo firewall-cmd --reload
 ```bash
 sudo firewall-cmd --zone=kibana --add-source=<IP_ADDRESS> --permanent
 sudo firewall-cmd --reload
+```
+
+測試
+
+```bash
+sudo firewall-cmd --zone=kibana --list-all
+
+sudo netstat -plnt
 ```
 
 ### 6. 啟動 kibana 服務
