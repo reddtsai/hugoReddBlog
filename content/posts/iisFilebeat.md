@@ -1,11 +1,13 @@
 ---
-title: "windows 如何安裝 Filebeat 收集 IIS Logs"
+title: "Windows 如何安裝 Filebeat 收集 IIS Logs"
 date: 2019-07-05T11:28:52+08:00
 toc: true
 tags: ["ELK"]
 ---
 
-## windows 如何安裝 Filebeat 收集 IIS Logs
+<!--more-->
+
+## 安裝 Filebeat 收集 IIS Logs
 
 1. Download [Filebeat](https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.2.0-windows-x86_64.zip) for Windows
 
@@ -50,3 +52,5 @@ tags: ["ELK"]
     ```bash
     Start-Service filebeat
     ```
+
+    ![Alt text](/images/filebeat_service.PNG)
