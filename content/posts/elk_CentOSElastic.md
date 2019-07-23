@@ -7,7 +7,7 @@ tags: ["ELK"]
 
 <!--more-->
 
-## 安裝 Elasticsearch
+## 安裝 Elasticsearch 6
 
 ### 1. 安裝 OpenJDK
 
@@ -83,6 +83,14 @@ sudo firewall-cmd --reload
 ```bash
 sudo firewall-cmd --zone=elasticsearch --add-source=<IP_ADDRESS> --permanent
 sudo firewall-cmd --reload
+```
+
+測試
+
+```bash
+sudo firewall-cmd --zone=kibana --list-all
+
+sudo netstat -plnt
 ```
 
 ### 6. 配置 Elasticsearch

@@ -7,11 +7,11 @@ tags: ["ELK"]
 
 <!--more-->
 
-## 安裝 Filebeat 收集 IIS Logs
+## 安裝 Filebeat 6
 
 ### 1. 下載 Filebeat
 
-Download [Filebeat](https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.2.0-windows-x86_64.zip) for Windows
+Download [Filebeat](https://www.elastic.co/cn/downloads/past-releases#filebeat) for Windows
 
 ### 2. 安裝 Filebeat
 

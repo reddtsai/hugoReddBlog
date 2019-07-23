@@ -7,7 +7,7 @@ tags: ["ELK"]
 
 <!--more-->
 
-## 安裝 Kibana
+## 安裝 Kibana 6
 
 ### 1. 安裝 OpenJDK
 
