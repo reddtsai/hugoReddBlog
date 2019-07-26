@@ -2,7 +2,7 @@
 title: "Elastic"
 date: 2019-07-11T19:01:43+08:00
 toc: true
-tags: ["ELK"]
+tags: ["elastic"]
 ---
 
 <!--more-->

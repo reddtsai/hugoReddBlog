@@ -2,7 +2,7 @@
 title: "CentOS 7 如何安裝 Kibana"
 date: 2019-06-27T14:38:02+08:00
 toc: true
-tags: ["ELK"]
+tags: ["elastic"]
 ---
 
 <!--more-->

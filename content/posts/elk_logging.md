@@ -2,7 +2,7 @@
 title: "如何利用 Elastic 處理日誌"
 date: 2019-07-11T18:57:13+08:00
 toc: true
-tags: ["ELK"]
+tags: ["elastic"]
 ---
 
 <!--more-->
@@ -16,9 +16,11 @@ tags: ["ELK"]
 
 首先是如何收集匯整你的日誌？例如你有 IIS、NGINX、MySQL、APP 多種不同類型的日誌，你需要將它們收集起來存放。
 
-<svg xmlns="http://www.w3.org/2000/svg" width="64px" height="64px"><image xlink:href="/images/beats.svg" /></svg> FileBeat 是匯整轉發日誌工具，可使用它內建模組或自訂格式來收集日誌，並將收集來的數據解析發送到 Logstash 或 Elasticsearch 儲存。
+<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"><image xlink:href="/images/beats.svg" /></svg> FileBeat 是匯整轉發日誌工具，可使用它內建模組或自訂格式來收集日誌，並將收集來的數據解析發送到 Logstash 或 Elasticsearch 儲存。
 
-<svg xmlns="http://www.w3.org/2000/svg" width="64px" height="64px"><image xlink:href="/images/logstash.svg" /></svg> Logstash 是接收轉發日誌服務
+[範例 - Filebeat 收集 IIS Logs]:https://reddtsai.github.io/posts/elk_iisfilebeat/
+
+<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"><image xlink:href="/images/logstash.svg" /></svg> Logstash 是接收轉發日誌服務，接收
 
 ### 日誌分析
 

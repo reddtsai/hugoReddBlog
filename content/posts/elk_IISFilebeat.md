@@ -2,7 +2,7 @@
 title: "Windows 如何安裝 Filebeat 收集 IIS Logs"
 date: 2019-07-05T11:28:52+08:00
 toc: true
-tags: ["ELK"]
+tags: ["elastic"]
 ---
 
 <!--more-->
