@@ -7,13 +7,21 @@ tags: ["elastic"]
 
 <!--more-->
 
-## 安裝 Filebeat 6
+### 安裝 Filebeat 6
 
-### 1. 下載 Filebeat
+版本
+
+* Filebeat 6
+
+環境
+
+* CentOS 7
+
+#### 1. 下載 Filebeat
 
 Download [Filebeat](https://www.elastic.co/cn/downloads/past-releases#filebeat) for Windows
 
-### 2. 安裝 Filebeat
+#### 2. 安裝 Filebeat
 
 解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell
 
@@ -22,7 +30,7 @@ Download [Filebeat](https://www.elastic.co/cn/downloads/past-releases#filebeat) 
     .\install-service-filebeat.ps1
 ```
 
-### 3. 設定 Filebeat
+#### 3. 設定 Filebeat
 
 編輯 filebeat.yml
 
@@ -33,7 +41,7 @@ Download [Filebeat](https://www.elastic.co/cn/downloads/past-releases#filebeat) 
         host: "localhost:5601"
 ```
 
-### 4. 設定 Filebeat 模組
+#### 4. 設定 Filebeat 模組
 
 收集 IIS Log
 
@@ -51,7 +59,7 @@ Download [Filebeat](https://www.elastic.co/cn/downloads/past-releases#filebeat) 
     .\filebeat.exe modules enable iis
 ```
 
-### 5. 啟動 Filebeat 服務
+#### 5. 啟動 Filebeat 服務
 
 ```bash
     Start-Service filebeat

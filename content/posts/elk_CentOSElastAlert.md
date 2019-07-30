@@ -7,7 +7,15 @@ tags: ["elastic"]
 
 <!--more-->
 
-## 安裝 ElastAlert 0.2
+### 安裝 ElastAlert 0.2
+
+版本
+
+* ElastAlert 0.2
+
+環境
+
+* CentOS 7
 
 安裝需求
 
@@ -19,7 +27,7 @@ tags: ["elastic"]
 
 * dependency Package，參考 ElastAlert requirements.txt
 
-### 安裝 PIP、DEV
+#### 1. 安裝 PIP、DEV
 
 確認是否已安裝 python 2.7
 
@@ -41,7 +49,7 @@ pip --version
 sudo pip install --upgrade pip
 ```
 
-### 安裝 ElastAlert
+#### 2. 安裝 ElastAlert
 
 確認套件，安裝的過程中可能會遇到相依套件的問題，請參考 ElastAlert requirements.txt 中的需求套件清單
 
@@ -67,7 +75,7 @@ sudo pip install requests --ignore-installed requests
 sudo pip install elastalert
 ```
 
-### 設定 ElastAlert
+#### 3. 設定 ElastAlert
 
 在 ElastAlert 目錄下新增設定檔 config.yaml。以我的環境為例 /usr/lib/python2.7/site-packages/elastalert
 
@@ -104,7 +112,7 @@ alert_time_limit:
   days: 2
 ```
 
-### 設定 Elasticsearch Client
+#### 4. 設定 Elasticsearch Client
 
 確認 Elasticsearch Client 的版本和 Elasticsearch 的版本相符。以我的環境為例，需要將 lasticsearch Client 更新至 6.X 版
 
@@ -122,7 +130,7 @@ sudo pip install "elasticsearch<7"
 elastalert-create-index
 ```
 
-### 設定通知規則
+#### 5. 設定通知規則
 
 新增通知規則設定檔 filebeat_frequency.yaml。以我的環境為例 /usr/lib/python2.7/site-packages/elastalert/alert_rules
 
@@ -164,7 +172,7 @@ alert:
 elastalert-test-rule alert_rules/filebeat_frequency.yaml
 ```
 
-### 設定 ElastAlert 服務
+#### 6. 設定 ElastAlert 服務
 
 執行測試
 

@@ -7,22 +7,30 @@ tags: ["elastic"]
 
 <!--more-->
 
-## 安裝 Elasticsearch 6
+### 安裝 Elasticsearch 6
 
-### 1. 安裝 OpenJDK
+版本
+
+* Elasticsearch 6.8
+
+環境
+
+* CentOS 7
+
+#### 1. 安裝 OpenJDK
 
 ```bash
 sudo yum  install java-1.8.0-openjdk-devel
 java -version
 ```
 
-### 2. 安裝 Elasticsearch 簽章公鑰
+#### 2. 安裝 Elasticsearch 簽章公鑰
 
 ```bash
 rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
 
-### 3. 安裝 Elasticsearch
+#### 3. 安裝 Elasticsearch
 
 建立 Elasticsearch 套件容器設定檔 /etc/yum.repos.d/elasticsearch.repo
 
@@ -45,7 +53,7 @@ type=rpm-md
 sudo yum install elasticsearch
 ```
 
-### 4. 啟動 Elasticsearch 服務
+#### 4. 啟動 Elasticsearch 服務
 
 ```bash
 sudo systemctl enable elasticsearch.service
@@ -66,7 +74,7 @@ curl -X GET http://localhost:9200
 sudo journalctl --unit elasticsearch --since  "20 min ago"
 ```
 
-### 5. 設定防火牆和IP
+#### 5. 設定防火牆和IP
 
 新增
 
@@ -93,7 +101,7 @@ sudo firewall-cmd --zone=kibana --list-all
 sudo netstat -plnt
 ```
 
-### 6. 配置 Elasticsearch
+#### 6. 配置 Elasticsearch
 
 Elasticsearch 配置檔 /etc/elasticsearch/elasticsearch.yml
 
