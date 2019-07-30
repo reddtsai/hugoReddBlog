@@ -18,7 +18,7 @@ tags: ["elastic"]
 
 <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"><image xlink:href="/images/beats.svg" /></svg> FileBeat 是匯整轉發日誌工具，可使用它內建模組或自訂格式來收集日誌，並將收集來的數據解析發送到 Logstash 或 Elasticsearch 儲存。
 
-範例[Windows 如何安裝 Filebeat 收集 IIS Logs](https://reddtsai.github.io/posts/elk_iisfilebeat/)
+> 範例[Windows 如何安裝 Filebeat 收集 IIS Logs](https://reddtsai.github.io/posts/elk_iisfilebeat/)
 
 <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"><image xlink:href="/images/logstash.svg" /></svg> Logstash 是接收轉發日誌中介服務，從過濾器接收不同形式的來源，透過建構結構來分析轉換成通用格式，再輸出到 Elasticsearch 或其它儲存設備。
 
@@ -28,7 +28,7 @@ tags: ["elastic"]
 
 <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"><image xlink:href="/images/elasticsearch.svg" /></svg> Elasticsearch 是一個分散式、RESTful 風格的搜尋和數據分析引擎，它是 Elastic 的核心，很像資料庫提供搜索和儲存。
 
-範例[CentOS 7 如何安裝 Elasticsearch](https://reddtsai.github.io/posts/elk_centoselastic)
+> 範例[CentOS 7 如何安裝 Elasticsearch](https://reddtsai.github.io/posts/elk_centoselastic)
 
 #### 日誌分析
 
@@ -36,4 +36,4 @@ tags: ["elastic"]
 
 <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"><image xlink:href="/images/kibana.svg" /></svg> Kibana 是個強大的 UI，透過網頁呈現，提供多種儀表皮和圖表來分享數據。
 
-範例[CentOS 7 如何安裝 Kibana](https://reddtsai.github.io/posts/elk_centoskibana/)
+> 範例[CentOS 7 如何安裝 Kibana](https://reddtsai.github.io/posts/elk_centoskibana/)
