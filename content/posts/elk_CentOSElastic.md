@@ -7,8 +7,6 @@ tags: ["elastic"]
 
 <!--more-->
 
-### 安裝 Elasticsearch 6
-
 版本
 
 * Elasticsearch 6.8

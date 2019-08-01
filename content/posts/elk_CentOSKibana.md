@@ -7,8 +7,6 @@ tags: ["elastic"]
 
 <!--more-->
 
-### 安裝 Kibana 6
-
 版本
 
 * Kibana 6.8

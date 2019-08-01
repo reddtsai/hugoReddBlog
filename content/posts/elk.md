@@ -7,8 +7,6 @@ tags: ["elastic"]
 
 <!--more-->
 
-### Elastic Stack
-
 #### 歷史
 
 Elastic 是由 Elasticsearch、Logstach 和 Kibana 這三個開源項目所組成，最初是由 Shay 編寫的 Elasticsearch 這個食譜搜尋引擎開始，後來與 Jordan 開發的 Logstach 和 Rashid 開發的 Kibana 共同合作。隨後推出一些商業服務並成立 Elastic 這個品牌。
@@ -26,5 +24,10 @@ Logstach 是個數據處理工具，將不同來源的資料轉化、解析或�
 #### Kibana
 
 Kibana 為 Elastic 的介面(UI)，可用來管理配置 Elastic，或透過 DSL、SQL 查詢語法，將 Elasticsearch 數據分享。
+
+> 文章參考來源  
+> [Elastic 官網](https://www.elastic.co/cn/)
+
+<br/>
 
 下篇文章會介紹[如何利用 Elastic 處理日誌](https://reddtsai.github.io/posts/elk_logging)

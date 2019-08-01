@@ -7,8 +7,6 @@ tags: ["elastic"]
 
 <!--more-->
 
-### 安裝 ElastAlert 0.2
-
 版本
 
 * ElastAlert 0.2
