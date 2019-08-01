@@ -25,30 +25,30 @@ Filebeat 是個檔案分析工具，最常用來收集日誌檔，收集的過�
 
 以下為該如何使用 Filebeat 模組
 
-#### 模組設定
+#### 設定模組
 
 Filebeat 提供多樣模組來收集常見的日誌，這邊以 IIS 日誌為例，說明如何設定模組。
 
-1. 設定日誌路徑
+__**設定日誌路徑**__
 
-    加入 IIS 日誌路徑
+加入 IIS 日誌路徑
 
-    編輯 [Windows 安裝路徑]\filebeat\module\iis\access\manifest.yml
+編輯 [Windows 安裝路徑]\filebeat\module\iis\access\manifest.yml
 
-    ```text
-        default.paths:
-            default:
-                - C:/inetpub/logs/LogFiles/*/*.log
-    ```
+```text
+    default.paths:
+        default:
+            - C:/inetpub/logs/LogFiles/*/*.log
+```
 
-2. 啟用模組
+__**啟用模組**__
 
-    開啟 IIS 模組，在 PowerShell 執行下方命令
+開啟 IIS 模組，在 PowerShell 執行下方命令
 
-    ```bash
+```bash
     cd [Windows 安裝路徑]
     .\filebeat.exe modules enable iis
-    ```
+```
 
 #### 新增模組
 
@@ -71,11 +71,11 @@ filebeat
 
 ```
 
-##### manifest.yaml
+__**manifest.yaml**__
 
-* 模組控制檔
+模組控制檔
 
-    日誌路徑
+* 日誌路徑
 
     ```text
     var:
@@ -84,23 +84,39 @@ filebeat
         - C:/log/*.log
     ```
 
-    參考
+* template 參考路徑
 
-* 設定日誌路徑
+    `input: config/fileset.yml`
 
-* 設定 Ingest Pipeline
+* Ingest Pipeline 參考路徑
 
-* 指定設定檔
+    `ingest_pipeline: ingest/pipeline.json`
 
-filebeat modules.d
+__**fileset.yml**__
 
-test
+input configurations，設定輸入位置、排除輸入檔案、排除輸入行及多行組合
+
+例如排除 .gz 檔
+
+`exclude_files: [".gz$"]`
+
+__**pipeline.json**__
+
+Elasticsearch ingest node pipeline configurations
+
+如果測試 pipeline 有問題，修改完 pipeline.json，需要刪除舊的 pipeline.json，透過 elasticsearch api
 
 ```bash
 curl -X DELETE http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
 ```
 
+__**modules.yml.disabled**__
+
+模組開關
+
 #### 測試模組
+
+新增或設定好模組，先由測試確認完後再上線
 
 1. 測試設定檔
 
