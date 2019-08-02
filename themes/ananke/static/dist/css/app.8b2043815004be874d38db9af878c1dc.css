@@ -5709,7 +5709,6 @@ code, .code {
 pre, .pre  {
   overflow-x: auto;
   overflow-y: hidden;
-  overflow:   scroll;
 }
 
 pre  code {
@@ -5717,12 +5716,13 @@ pre  code {
   padding: 1.5em 1.5em;
   white-space: pre;
   font-size: .875rem;
-  line-height: 2;
+  line-height: 1.45;
 
 }
 
 pre {
   background-color: #f6fffe;
+  border-radius: 3px;
   white-space: pre;
   -webkit-hyphens: none;
       -ms-hyphens: none;
@@ -5848,9 +5848,17 @@ pre {
                  sans-serif;
   }
 
-.serif {
+/*
+  .serif {
     font-family: georgia,
                  times,
+                 serif;
+  }
+  */
+
+.serif {
+    font-family: BiauKai,
+                 Microsoft YaHei,
                  serif;
   }
 
@@ -5890,8 +5898,8 @@ code, .code {
                  sans-serif;
   }
 
-.yahei {
-    font-family: 'Microsoft YaHei', 'DFKai-SB', sans-serif;
+.biaukai {
+    font-family: BiauKai, Microsoft YaHei, avenir, sans-serif;
   }
 
 /* Serif Typefaces */
