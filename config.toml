@@ -33,3 +33,6 @@ disqusShortname = "reddtsai"
   featured_image = "/images/whole_life.jpg"
   recent_posts_number = 5
   commentoEnable = true
+  #body_classes = "avenir bg-near-white"
+  body_classes = "biaukai bg-near-white"
+  #custom_css = ["css/redd.css"]

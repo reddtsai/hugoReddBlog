@@ -105,7 +105,7 @@ Elasticsearch 配置檔 /etc/elasticsearch/elasticsearch.yml
 
 Elasticsearch JVM 配置檔 /etc/elasticsearch/jvm.options
 
-__◎記憶體配置不可小放實體記憶體50%__
+__*✳︎記憶體配置不可小放實體記憶體50%*__
 
 ```text
 -Xms2g

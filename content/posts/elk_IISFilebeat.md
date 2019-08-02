@@ -79,9 +79,9 @@ __**manifest.yaml**__
 
     ```text
     var:
-    - name: paths
+      － name: paths
         os.windows
-        - C:/log/*.log
+          － C:/log/*.log
     ```
 
 * template 參考路徑
@@ -123,13 +123,13 @@ __**modules.yml.disabled**__
     ```bash
     .\filebeat.exe test config -c filebeat.yml
     .\filebeat.exe test output filebeat.yml
-    ```
+    ```  
 
 2. 執行 Filebeat
 
     ```bash
     .\filebeat.exe -e -c filebeat.yml -d "*"
-    ```
+    ```  
 
     > 注意  
     > 請先清除前次測試所讀取的記錄，刪除目錄 filebeat\data\registry
