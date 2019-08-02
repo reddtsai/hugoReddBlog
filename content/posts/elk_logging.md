@@ -51,4 +51,4 @@ Elastc 提供一個強大的 UI 介面 Kibana，它能協助你分析 視覺化�
 
 最後，Elastc 也提供數據、效能監控服務，這部分屬於白金服務需要付費，也有一些替代方，例如 ElastAlert、Sentinl。
 
-> 範例[CentOS 7 如何安裝 ElastAlert](https://reddtsai.github.io/posts/elk_/)
+> 範例[CentOS 7 如何安裝 ElastAlert](https://reddtsai.github.io/posts/elk_centoselastalert/)
