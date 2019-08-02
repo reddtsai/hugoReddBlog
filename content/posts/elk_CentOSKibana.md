@@ -7,6 +7,8 @@ tags: ["elastic"]
 
 <!--more-->
 
+* * * *
+
 版本
 
 * Kibana 6.8

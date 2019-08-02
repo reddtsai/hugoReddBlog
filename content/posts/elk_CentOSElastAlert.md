@@ -7,6 +7,8 @@ tags: ["elastic"]
 
 <!--more-->
 
+* * * *
+
 版本
 
 * ElastAlert 0.2
