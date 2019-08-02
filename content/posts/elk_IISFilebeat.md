@@ -79,18 +79,28 @@ __**manifest.yaml**__
 
     ```text
     var:
-      － name: paths
+    － name: paths
         os.windows
-          － C:/log/*.log
+        － C:/log/*.log
     ```
+
+<!-- end of list -->
 
 * template 參考路徑
 
-    `input: config/fileset.yml`
+    ```text
+    input: config/fileset.yml
+    ```
+
+<!-- end of list -->
 
 * Ingest Pipeline 參考路徑
 
-    `ingest_pipeline: ingest/pipeline.json`
+    ```text
+    ingest_pipeline: ingest/pipeline.json
+    ```
+
+<!-- end of list -->
 
 __**fileset.yml**__
 
@@ -123,13 +133,15 @@ __**modules.yml.disabled**__
     ```bash
     .\filebeat.exe test config -c filebeat.yml
     .\filebeat.exe test output filebeat.yml
-    ```  
+    ```
+
+<!-- end of list -->
 
 2. 執行 Filebeat
 
     ```bash
     .\filebeat.exe -e -c filebeat.yml -d "*"
-    ```  
+    ```
 
     > 注意  
     > 請先清除前次測試所讀取的記錄，刪除目錄 filebeat\data\registry
@@ -144,6 +156,8 @@ __**modules.yml.disabled**__
     curl -X GET http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
     ```
 
+<!-- end of list -->
+
 4. 確認資料
 
     開啟 Kibana，透過 Logs 介面，確認是否有顯示 log 資料
@@ -153,3 +167,4 @@ __**modules.yml.disabled**__
 <br/>
 
 > 文章參考來源為 Elastic 官方文檔
+> test
