@@ -7,8 +7,6 @@ tags: ["elastic"]
 
 <!--more-->
 
-* * * *
-
 ### 歷史
 
 * * * *
@@ -33,9 +31,10 @@ Logstach 是個數據處理工具，將不同來源的資料轉化、解析或�
 
 * * * *
 
-Kibana 為 Elastic 的介面(UI)，可用來管理配置 Elastic，或透過 DSL、SQL 查詢語法，將 Elasticsearch 數據分享。/
+Kibana 為 Elastic 的介面(UI)，可用來管理配置 Elastic，或透過 DSL、SQL 查詢語法，將 Elasticsearch 數據分享。
 
-> 文章參考來源  
-> [Elastic 官網](https://www.elastic.co/cn/)
+文章參考來源  
+
+[Elastic 官網](https://www.elastic.co/cn/)
 
 下篇文章會介紹[如何利用 Elastic 處理日誌](https://reddtsai.github.io/posts/elk_logging)
