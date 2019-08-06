@@ -36,3 +36,9 @@ disqusShortname = "reddtsai"
   #body_classes = "avenir bg-near-white"
   body_classes = "biaukai bg-near-white"
   #custom_css = ["css/redd.css"]
+
+[menu]
+  [[menu.main]]
+    identifier = "me"
+    name = "Me"
+    url = "https://www.cakeresume.com/s--Tm0H9lc43gg5_Xt49g_pUQ--/reddtsai"

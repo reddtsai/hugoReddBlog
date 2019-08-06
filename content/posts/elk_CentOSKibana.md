@@ -15,6 +15,8 @@ tags: ["elastic"]
 
 * CentOS 7
 
+* * * *
+
 #### 1. 安裝 OpenJDK
 
 ```bash
@@ -22,11 +24,15 @@ sudo yum  install java-1.8.0-openjdk-devel
 java -version
 ```
 
+* * * *
+
 #### 2. 安裝 Elasticsearch 簽章公鑰
 
 ```bash
 rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
+
+* * * *
 
 #### 3. 安裝 Kibana
 
@@ -51,6 +57,8 @@ type=rpm-md
 sudo yum install kibana
 ```
 
+* * * *
+
 #### 4. 配置 kibana
 
 kibana 配置檔 /etc/kibana/kibana.yml
@@ -62,6 +70,8 @@ server.host: 0.0.0.0
 ```
 
 [參考官方說明]:https://www.elastic.co/guide/en/kibana/current/settings.html
+
+* * * *
 
 #### 5. 設定防火牆和IP
 
@@ -90,6 +100,8 @@ sudo firewall-cmd --zone=kibana --list-all
 sudo netstat -plnt
 ```
 
+* * * *
+
 #### 6. 啟動 kibana 服務
 
 ```bash
@@ -110,6 +122,8 @@ sudo systemctl status kibana.service
 ```bash
 sudo journalctl --unit kibana --since  "20 min ago"
 ```
+
+* * * *
 
 #### 參考
 

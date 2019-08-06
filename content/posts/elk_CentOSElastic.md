@@ -22,11 +22,15 @@ sudo yum  install java-1.8.0-openjdk-devel
 java -version
 ```
 
+* * * *
+
 #### 2. 安裝 Elasticsearch 簽章公鑰
 
 ```bash
 rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
+
+* * * *
 
 #### 3. 安裝 Elasticsearch
 
@@ -51,6 +55,8 @@ type=rpm-md
 sudo yum install elasticsearch
 ```
 
+* * * *
+
 #### 4. 啟動 Elasticsearch 服務
 
 ```bash
@@ -71,6 +77,8 @@ curl -X GET http://localhost:9200
 ```bash
 sudo journalctl --unit elasticsearch --since  "20 min ago"
 ```
+
+* * * *
 
 #### 5. 設定防火牆和IP
 
@@ -99,6 +107,8 @@ sudo firewall-cmd --zone=kibana --list-all
 sudo netstat -plnt
 ```
 
+* * * *
+
 #### 6. 配置 Elasticsearch
 
 Elasticsearch 配置檔 /etc/elasticsearch/elasticsearch.yml
@@ -113,6 +123,8 @@ __*✳︎記憶體配置不可小放實體記憶體50%*__
 
 network.host: 0.0.0.0
 ```
+
+* * * *
 
 #### 參考
 

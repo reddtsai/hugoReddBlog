@@ -19,6 +19,8 @@ tags: ["elastic"]
 
 Download [Filebeat](https://www.elastic.co/cn/downloads/past-releases#filebeat) for Windows
 
+* * * *
+
 #### 2. 安裝 Filebeat
 
 解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell
@@ -27,6 +29,8 @@ Download [Filebeat](https://www.elastic.co/cn/downloads/past-releases#filebeat) 
     cd 'C:\Program Files\Filebeat'
     .\install-service-filebeat.ps1
 ```
+
+* * * *
 
 #### 3. 設定 Filebeat
 
@@ -38,6 +42,8 @@ Download [Filebeat](https://www.elastic.co/cn/downloads/past-releases#filebeat) 
     setup.kibana:
         host: "localhost:5601"
 ```
+
+* * * *
 
 #### 4. 設定 Filebeat 模組
 
@@ -56,6 +62,8 @@ Download [Filebeat](https://www.elastic.co/cn/downloads/past-releases#filebeat) 
 ```bash
     .\filebeat.exe modules enable iis
 ```
+
+* * * *
 
 #### 5. 啟動 Filebeat 服務
 
