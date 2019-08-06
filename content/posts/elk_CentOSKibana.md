@@ -7,8 +7,6 @@ tags: ["elastic"]
 
 <!--more-->
 
-* * * *
-
 版本
 
 * Kibana 6.8
@@ -112,3 +110,7 @@ sudo systemctl status kibana.service
 ```bash
 sudo journalctl --unit kibana --since  "20 min ago"
 ```
+
+#### 參考
+
+[Elastic 官網](https://www.elastic.co/cn/)

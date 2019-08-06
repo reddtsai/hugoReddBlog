@@ -7,8 +7,6 @@ tags: ["elastic"]
 
 <!--more-->
 
-* * * *
-
 版本
 
 * Elasticsearch 6.8
@@ -115,5 +113,9 @@ __*✳︎記憶體配置不可小放實體記憶體50%*__
 
 network.host: 0.0.0.0
 ```
+
+#### 參考
+
+[Elastic 官網](https://www.elastic.co/cn/)
 
 [參考官方說明](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html)

@@ -7,8 +7,6 @@ tags: ["elastic"]
 
 <!--more-->
 
-* * * *
-
 版本
 
 * ElastAlert 0.2
@@ -26,6 +24,8 @@ tags: ["elastic"]
 * python-pip
 
 * dependency Package，參考 ElastAlert requirements.txt
+
+* * * *
 
 #### 1. 安裝 PIP、DEV
 
@@ -48,6 +48,8 @@ pip --version
 
 sudo pip install --upgrade pip
 ```
+
+* * * *
 
 #### 2. 安裝 ElastAlert
 
@@ -74,6 +76,8 @@ sudo pip install requests --ignore-installed requests
 ```bash
 sudo pip install elastalert
 ```
+
+* * * *
 
 #### 3. 設定 ElastAlert
 
@@ -112,6 +116,8 @@ alert_time_limit:
   days: 2
 ```
 
+* * * *
+
 #### 4. 設定 Elasticsearch Client
 
 確認 Elasticsearch Client 的版本和 Elasticsearch 的版本相符。以我的環境為例，需要將 lasticsearch Client 更新至 6.X 版
@@ -129,6 +135,8 @@ sudo pip install "elasticsearch<7"
 ```bash
 elastalert-create-index
 ```
+
+* * * *
 
 #### 5. 設定通知規則
 
@@ -171,6 +179,8 @@ alert:
 ```bash
 elastalert-test-rule alert_rules/filebeat_frequency.yaml
 ```
+
+* * * *
 
 #### 6. 設定 ElastAlert 服務
 
@@ -224,3 +234,11 @@ sudo systemctl enable elastalert.service
 sudo systemctl start elastalert.service
 sudo systemctl status elastalert.service
 ```
+
+* * * *
+
+#### 參考
+
+[ElastAlert Repo](https://github.com/Yelp/elastalert)
+
+[ElastAlert Doc](https://elastalert.readthedocs.io/en/latest/)

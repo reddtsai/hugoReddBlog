@@ -7,8 +7,6 @@ tags: ["elastic"]
 
 <!--more-->
 
-* * * *
-
 Filebeat 是個檔案分析工具，最常用來收集日誌檔，收集的過程分為
 
 1. 收集數據 (讀取日誌)
@@ -25,9 +23,9 @@ Filebeat 是個檔案分析工具，最常用來收集日誌檔，收集的過�
 >
 > 安裝請參考下一篇文章[Windows 如何安裝 Filebeat](https://reddtsai.github.io/posts/elk_windowsfilebeat/)
 
-### 設定模組
-
 * * * *
+
+### 設定模組
 
 Filebeat 提供多樣模組來收集常見的日誌，這邊以 IIS 日誌為例，說明如何設定模組。
 
@@ -47,9 +45,9 @@ Filebeat 提供多樣模組來收集常見的日誌，這邊以 IIS 日誌為例
         cd [Windows 安裝路徑]
         .\filebeat.exe modules enable iis
 
-### 新增模組
-
 * * * *
+
+### 新增模組
 
 新增一個模組後，可看到所產生的檔案結構，以下方我所建立的 nlog module 為例
 
@@ -96,9 +94,9 @@ Filebeat 提供多樣模組來收集常見的日誌，這邊以 IIS 日誌為例
 
     模組開關
 
-### 測試模組
-
 * * * *
+
+### 測試模組
 
 新增或設定好模組，先由測試確認完後再上線
 
@@ -131,3 +129,9 @@ Filebeat 提供多樣模組來收集常見的日誌，這邊以 IIS 日誌為例
     開啟 Kibana，透過 Logs 介面，確認是否有顯示 log 資料
 
     ![Alt text](/images/kibana_logs.PNG)
+
+* * * *
+
+### 參考
+
+[Elastic 官網](https://www.elastic.co/cn/)
