@@ -1,8 +1,19 @@
 ---
-title: "Redd Tsai's Blog"
-#featured_image: '/images/gohugo-default-sample-hero-image.jpg'
-#description: "The last theme you'll ever need. Maybe."
-#omit_header_text: true
+header:
+  - type: text
+    height: 200
+    paddingX: 50
+    paddingY: 0
+    align: center
+    title:
+      - いっしょけんめい
+    subtitle:
+      - 一生懸命
+    titleColor: #ddd
+    titleShadow: true
+    titleFontSize: 62
+    subtitleColor: 
+    subtitleCursive: true
+    subtitleFontSize: 18
+    spaceBetweenTitleSubtitle: 16
 ---
-
-Welcome to my blog with some of my work in progress.

@@ -1,0 +1,9 @@
+[en]
+title = "Redd's Side Project"
+languageName = "English"
+weight = 1
+
+[zh]
+title = "蔡文杰 Side Project"
+languageName = "中文"
+weight = 2
