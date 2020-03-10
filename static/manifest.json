@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "default_locale": "en",
     "description": "Redd blog",
-    "start_url": "http://localhost:1313/",
+    "start_url": ".",
     "icons": [
       {
         "src": "favicon/android-icon-36x36.png",
