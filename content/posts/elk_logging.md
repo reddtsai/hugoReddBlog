@@ -1,8 +1,17 @@
 ---
 title: "如何利用 Elastic 處理日誌"
 date: 2019-07-11T18:57:13+08:00
-toc: true
-tags: ["elastic"]
+description: 介紹 Elastic 個人應用實例
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: true
+author: Redd Tsai
+authorEmoji: 🐔
+tags:
+- Elastic
+categories:
+- Elastic
 ---
 
 <!--more-->

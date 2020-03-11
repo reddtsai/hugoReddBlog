@@ -1,9 +1,19 @@
 ---
 title: "Windows 如何安裝 Filebeat"
 date: 2019-07-30T15:59:54+08:00
-toc: true
-tags: ["elastic"]
+description: 介紹在 Windows 中安裝 Filebeat
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: true
+author: Redd Tsai
+authorEmoji: 🐔
+tags:
+- Filebeat
+categories:
+- Elastic
 ---
+
 
 <!--more-->
 

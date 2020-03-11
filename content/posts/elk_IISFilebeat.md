@@ -1,8 +1,17 @@
 ---
 title: "如何使用 Filebeat 收集日誌"
 date: 2019-07-05T11:28:52+08:00
-toc: true
-tags: ["elastic"]
+description: 透過 Filebeat 收集系統、應用程式 Log
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: true
+author: Redd Tsai
+authorEmoji: 🐔
+tags:
+- Filebeat
+categories:
+- Elastic
 ---
 
 <!--more-->

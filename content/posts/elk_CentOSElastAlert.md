@@ -1,8 +1,17 @@
 ---
 title: "CentOS 7 如何安裝 ElastAlert"
 date: 2019-07-25T14:06:13+08:00
-toc: true
-tags: ["elastic"]
+description: 介紹在 CentOS 中安裝 ElastAlert
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: true
+author: Redd Tsai
+authorEmoji: 🐔
+tags:
+- ElastAlert
+categories:
+- Elastic
 ---
 
 <!--more-->

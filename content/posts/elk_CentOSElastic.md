@@ -1,8 +1,17 @@
 ---
 title: "CentOS 7 如何安裝 Elasticsearch"
 date: 2019-06-27T14:37:52+08:00
-toc: true
-tags: ["elastic"]
+description: 介紹在 CentOS 中安裝 Elasticsearch
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: true
+author: Redd Tsai
+authorEmoji: 🐔
+tags:
+- Elasticsearch
+categories:
+- Elastic
 ---
 
 <!--more-->

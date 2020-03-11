@@ -1,8 +1,17 @@
 ---
 title: "CentOS 7 如何安裝 Kibana"
 date: 2019-06-27T14:38:02+08:00
-toc: true
-tags: ["elastic"]
+description: 介紹在 CentOS 中安裝 Kibana
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: true
+author: Redd Tsai
+authorEmoji: 🐔
+tags:
+- Kibana
+categories:
+- Elastic
 ---
 
 <!--more-->

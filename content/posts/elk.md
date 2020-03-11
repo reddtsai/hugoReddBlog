@@ -1,8 +1,17 @@
 ---
 title: "Elastic 簡介"
 date: 2019-07-11T19:01:43+08:00
-toc: true
-tags: ["elastic"]
+description: 介紹 Elastic 個人應用實例
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: true
+author: Redd Tsai
+authorEmoji: 🐔
+tags:
+- Elastic
+categories:
+- Elastic
 ---
 
 <!--more-->

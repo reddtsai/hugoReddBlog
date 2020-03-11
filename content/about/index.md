@@ -5,4 +5,4 @@ description: about page of Redd's side project
 type: about
 ---
 
-Hello，大家好我是Redd，是位後端軟體工程師(Backend Engineer)，在此與大家分享自己後端的工作經驗。
+Hello，大家好我是Redd，是位網路後端軟體工程師(Internet Backend Engineer)，在此一邊記錄並與大家分享自己的工作經驗。

@@ -1,8 +1,17 @@
 ---
 title: "如何使用 Kibana 分享日誌"
 date: 2019-08-02T11:49:01+08:00
-toc: true
-tags: ["elastic"]
+description: 介紹 Kibana 個人應用實例
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: true
+author: Redd Tsai
+authorEmoji: 🐔
+tags:
+- Kibana
+categories:
+- Elastic
 ---
 
 <!--more-->
