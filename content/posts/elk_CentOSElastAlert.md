@@ -20,10 +20,8 @@ categories:
 
 版本
 * ElastAlert 0.2
-
 環境
 * CentOS 7
-
 安裝需求
 * python 2.7
 * python-dev
@@ -38,7 +36,6 @@ categories:
 ```bash
 python --version
 ```
-
 安裝 python-pip
 ```bash
 sudo yum -y install python-devel

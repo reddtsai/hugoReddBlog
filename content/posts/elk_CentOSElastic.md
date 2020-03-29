@@ -20,7 +20,6 @@ categories:
 
 版本
 * Elasticsearch 6.8
-
 環境
 * CentOS 7
 

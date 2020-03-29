@@ -19,9 +19,7 @@ categories:
  Elastic 提供一個強大的 UI 介面 Kibana，透過它能更有效的分享與呈現 Elasticsearch 中的數據，接下來會以本身使用的案例，來介紹如何使用 Kibana。
 
 > 版本
->
 > * Kibana 6
->
 > 安裝請參考下一篇文章[CentOS 7 如何安裝 Kibana](https://reddtsai.github.io/posts/elk_centoskibana/)
 
 * * * *
@@ -32,9 +30,7 @@ categories:
 ![Alt text](/images/kibana_discover.PNG)
 
 > 注意
->
 > 如果遇到 no cached mapping for this field
->
 > 試著在 Management，Refresh field list
 
 * * * *

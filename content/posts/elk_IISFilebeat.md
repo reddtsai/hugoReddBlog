@@ -23,9 +23,7 @@ Filebeat 是個檔案分析工具，最常用來收集日誌檔，收集的過�
 3. 傳送數據 (Logstash 或 Elasticsearch 儲存)
 
 > 版本
->
 > * Filebeat 6
->
 > 安裝請參考下一篇文章[Windows 如何安裝 Filebeat](https://reddtsai.github.io/posts/elk_windowsfilebeat/)
 
 * * * *

@@ -19,11 +19,8 @@ categories:
 <!--more-->
 
 版本
-
 * Kibana 6.8
-
 環境
-
 * CentOS 7
 
 * * * *
@@ -48,9 +45,7 @@ rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 #### 3. 安裝 Kibana
 
 建立 Kibana 套件容器設定檔 /etc/yum.repos.d/kibana.repo
-
 填入套件容器參數
-
 ```text
 [kibana-6.x]
 name=Kibana repository for 6.x packages
@@ -61,9 +56,7 @@ enabled=1
 autorefresh=1
 type=rpm-md
 ```
-
 安裝 kibana
-
 ```bash
 sudo yum install kibana
 ```
@@ -73,10 +66,8 @@ sudo yum install kibana
 #### 4. 配置 kibana
 
 kibana 配置檔 /etc/kibana/kibana.yml
-
 ```text
 elasticsearch.hosts: http://localhost:9200
-
 server.host: 0.0.0.0
 ```
 
@@ -87,7 +78,6 @@ server.host: 0.0.0.0
 #### 5. 設定防火牆和IP
 
 新增
-
 ```bash
 sudo firewall-cmd --new-zone=kibana --permanent
 sudo firewall-cmd --reload
@@ -95,19 +85,14 @@ sudo firewall-cmd --zone=kibana --add-source=<IP_ADDRESS>/32 --permanent
 sudo firewall-cmd --zone=kibana --add-port=5601/tcp --permanent
 sudo firewall-cmd --reload
 ```
-
 修改
-
 ```bash
 sudo firewall-cmd --zone=kibana --add-source=<IP_ADDRESS> --permanent
 sudo firewall-cmd --reload
 ```
-
 測試
-
 ```bash
 sudo firewall-cmd --zone=kibana --list-all
-
 sudo netstat -plnt
 ```
 
@@ -119,17 +104,12 @@ sudo netstat -plnt
 sudo systemctl enable kibana.service
 sudo systemctl start kibana.service
 ```
-
 測試 kibana
-
 http://localhost:5601
-
 ```bash
 sudo systemctl status kibana.service
 ```
-
 也可檢查服務記錄訊息
-
 ```bash
 sudo journalctl --unit kibana --since  "20 min ago"
 ```
