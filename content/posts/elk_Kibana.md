@@ -29,7 +29,6 @@ categories:
 #### Discover Page
 
 數據探索功能，使用 Elasticsearch Index、Time Range 和 Query DSL 過濾搜索，顯示數據計數和內䆟
-
 ![Alt text](/images/kibana_discover.PNG)
 
 > 注意
@@ -43,7 +42,6 @@ categories:
 #### Dashboard Page
 
 儀表版功能，Kibana 提供多樣視覺化圖表，儀表版可幫助你收集管理這些圖表
-
 ![Alt text](/images/kibana_dashboard.PNG)
 
 * * * *
@@ -51,7 +49,6 @@ categories:
 #### Logs Page
 
 數據功能，顯示匯入的數據
-
 ![Alt text](/images/kibana_logs.PNG)
 
 * * * *
@@ -59,9 +56,7 @@ categories:
 #### Query DSL
 
 Elastic 提供了一套查詢語法 DSL (Domain Specific Language)，可透過 RESTful 或 Kibana 的介面來使用，這邊介紹幾個範例
-
 * Match
-
     例如查詢 IIS 中，有那些 Request 回應 500
 
         GET /_search
@@ -75,9 +70,7 @@ Elastic 提供了一套查詢語法 DSL (Domain Specific Language)，可透過 R
                 }
             }
         }
-
 * Wildcard
-
     例如查詢 IIS 中，有那些 Request url like */app/
 
         GET /_search
@@ -88,9 +81,7 @@ Elastic 提供了一套查詢語法 DSL (Domain Specific Language)，可透過 R
                 }
             }
         }
-
 * Prefix
-
     例如查詢 IIS 中，url 以 /en/app 開頭的 Request 有那些
 
         GET /_search

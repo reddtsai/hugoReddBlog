@@ -10,19 +10,18 @@ author: Redd Tsai
 authorEmoji: 🐔
 tags:
 - Filebeat
+- Windows
 categories:
 - Elastic
+- OS
 ---
 
 
 <!--more-->
 
 版本
-
 * Filebeat 6
-
 環境
-
 * Windows 10
 
 #### 1. 下載 Filebeat
@@ -34,7 +33,6 @@ Download [Filebeat](https://www.elastic.co/cn/downloads/past-releases#filebeat) 
 #### 2. 安裝 Filebeat
 
 解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell
-
 ```bash
     cd 'C:\Program Files\Filebeat'
     .\install-service-filebeat.ps1
@@ -45,7 +43,6 @@ Download [Filebeat](https://www.elastic.co/cn/downloads/past-releases#filebeat) 
 #### 3. 設定 Filebeat
 
 編輯 filebeat.yml，設定 elasticsearch 和 kibana 的位置
-
 ```text
     output.elasticsearch:
         hosts: ["localhost:9200"]
@@ -58,9 +55,7 @@ Download [Filebeat](https://www.elastic.co/cn/downloads/past-releases#filebeat) 
 #### 4. 設定 Filebeat 模組
 
 收集 IIS Log
-
 編輯 filebeat\module\iis\access\manifest.yml
-
 ```text
     default.paths:
         default:
@@ -68,7 +63,6 @@ Download [Filebeat](https://www.elastic.co/cn/downloads/past-releases#filebeat) 
 ```
 
 啟用 iis 模組
-
 ```bash
     .\filebeat.exe modules enable iis
 ```
@@ -81,5 +75,4 @@ Download [Filebeat](https://www.elastic.co/cn/downloads/past-releases#filebeat) 
     .\filebeat.exe setup
     Start-Service filebeat
 ```
-
 ![Alt text](/images/filebeat_service.PNG)

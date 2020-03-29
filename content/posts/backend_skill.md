@@ -15,7 +15,6 @@ categories:
 ---
 
 從事軟體工程師的工作十年了，被稱過軟體工程師(PG)、研發工程師(RD)、後端工程師(Backend)、系統設計師(SD)、系統架構師(SA) ...，雖然職稱一直再變，但自己感覺工作內容並無太大的改變，最近剛好看到一篇有趣的文章，是關於軟體開發者的 Roadmap，並跟自己作個比較。
-
 <!--more-->
 
 ### Nowadays Web Developer
@@ -27,23 +26,23 @@ categories:
 ### Backend Skill Tree
 
 後端在搞什麼？看完下方 Backend Roadmap 還想當後端工程師嗎？自己也是後端工程，那就透過這張圖來盤點一下自己(看看自己有多爽🤥)。
-
 以個人經驗將這張 Roadmap 分為以下幾個大項
 - Data Transfer  
     DNS、FTP、HTTP、TCP、RPC ...
 - Data Storage  
-    Cache、[Database](https://reddtsai.github.io/zh/categories/Database/)、File ...
+    Cache、[Database](https://reddtsai.github.io/zh/categories/database/)、File ...
 - Host  
-    Domain、OS、Cloud、Docker、IIS、Nginx ...
+    Domain、[OS](https://reddtsai.github.io/zh/categories/os/)、Docker、IIS、Nginx、AWS、[GCP](https://reddtsai.github.io/zh/categories/gcp/)、Azures ...
 - Programming  
     C#、Python、Golang、Node.js、Git...
 - Test  
-    Unit、Intergration、Log
+    Unit、Intergration
 - Deployment  
     CI、CD
+- Other
+    Log、Monitor、[Elastic](https://reddtsai.github.io/zh/categories/elastic)
 
 經以上這些項目來盤點自己是不是個後端工師的同時，也用它記錄分享一些實例和個人經驗(希望未來能補完🙏🙏🙏)。
-
 以下是[Kamran Ahmed](https://github.com/kamranahmedse/developer-roadmap)所畫後端工程師的技能樹。
 
 ![Alt text](/images/backend.png)

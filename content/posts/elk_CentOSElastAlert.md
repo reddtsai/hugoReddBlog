@@ -10,28 +10,24 @@ author: Redd Tsai
 authorEmoji: 🐔
 tags:
 - ElastAlert
+- CentOS
 categories:
 - Elastic
+- OS
 ---
 
 <!--more-->
 
 版本
-
 * ElastAlert 0.2
 
 環境
-
 * CentOS 7
 
 安裝需求
-
 * python 2.7
-
 * python-dev
-
 * python-pip
-
 * dependency Package，參考 ElastAlert requirements.txt
 
 * * * *
@@ -39,22 +35,16 @@ categories:
 #### 1. 安裝 PIP、DEV
 
 確認是否已安裝 python 2.7
-
 ```bash
 python --version
 ```
 
 安裝 python-pip
-
 ```bash
 sudo yum -y install python-devel
-
 sudo yum -y install epel-release
-
 sudo yum -y install python-pip
-
 pip --version
-
 sudo pip install --upgrade pip
 ```
 
@@ -63,25 +53,18 @@ sudo pip install --upgrade pip
 #### 2. 安裝 ElastAlert
 
 確認套件，安裝的過程中可能會遇到相依套件的問題，請參考 ElastAlert requirements.txt 中的需求套件清單
-
 ```bash
 pip list
 ```
-
 例如，在安裝 blist 套件時，需要安裝 GCC
-
 ```bash
 sudo yum -y install gcc
 ```
-
 例如，在更新 requests 套件時，需要強制移除安裝
-
 ```bash
 sudo pip install requests --ignore-installed requests
 ```
-
 安裝 ElastAlert
-
 ```bash
 sudo pip install elastalert
 ```
@@ -91,9 +74,7 @@ sudo pip install elastalert
 #### 3. 設定 ElastAlert
 
 在 ElastAlert 目錄下新增設定檔 config.yaml。以我的環境為例 /usr/lib/python2.7/site-packages/elastalert
-
 建議複製 ElastAlert config.yaml.example
-
 ```yaml
 # This is the folder that contains the rule yaml files
 # Any .yaml file will be loaded as a rule
@@ -130,17 +111,12 @@ alert_time_limit:
 #### 4. 設定 Elasticsearch Client
 
 確認 Elasticsearch Client 的版本和 Elasticsearch 的版本相符。以我的環境為例，需要將 lasticsearch Client 更新至 6.X 版
-
 ```bash
 pip list
-
 sudo pip uninstall elasticsearch
-
 sudo pip install "elasticsearch<7"
 ```
-
 在 Elasticsearch 增加一個 ElastAlert 的索引
-
 ```bash
 elastalert-create-index
 ```
@@ -150,9 +126,7 @@ elastalert-create-index
 #### 5. 設定通知規則
 
 新增通知規則設定檔 filebeat_frequency.yaml。以我的環境為例 /usr/lib/python2.7/site-packages/elastalert/alert_rules
-
 這裡以 IIS Log 為例，當 http status != 200 時，發送一個訊息至 Slack
-
 ```yaml
 es_host: elasticsearch.example.com
 
@@ -182,9 +156,7 @@ alert:
 - slack:
     slack_webhook_url: "http://slack_webhook_url"
 ```
-
 測試規則設定檔
-
 ```bash
 elastalert-test-rule alert_rules/filebeat_frequency.yaml
 ```
@@ -194,33 +166,24 @@ elastalert-test-rule alert_rules/filebeat_frequency.yaml
 #### 6. 設定 ElastAlert 服務
 
 執行測試
-
 ```bash
 python -m elastalert --verbose --rule alert_rules/filebeat_frequency.yaml
 ```
-
 新增服務
-
 ```bash
 sudo mkdir -p /etc/elastalert/rules
 cd /etc/elastalert/
 sudo cp /usr/lib/python2.7/site-packages/elastalert/config.yaml config.yaml
 sudo cp /usr/lib/python2.7/site-packages/elastalert/alert_rules/filebeat_frequency.yaml rules/filebeat_frequency.yaml
 ```
-
 修改 config.yaml
-
 rules_folder: /etc/elastalert/rules
-
 新增服務設定檔
-
 ```bash
 cd /etc/systemd/system/
 sudo vi elastalert.service
 ```
-
 elastalert.service
-
 ```text
 [Unit]
 Description=elastalert
@@ -249,5 +212,4 @@ sudo systemctl status elastalert.service
 #### 參考
 
 [ElastAlert Repo](https://github.com/Yelp/elastalert)
-
 [ElastAlert Doc](https://elastalert.readthedocs.io/en/latest/)

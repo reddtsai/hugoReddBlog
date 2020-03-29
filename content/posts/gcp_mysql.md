@@ -16,7 +16,6 @@ categories:
 ---
 
 不論公司 project 或個人 side project，都會遇到資料儲存的需求，這時可能就是
-
 - 求 DBA
 - 自己安裝
 - 向 Infra 申請
@@ -26,7 +25,6 @@ categories:
 ### Why Cloud SQl
 
 我為什麼選擇 Cloud SQl？原因只有一個，就是快
-
 1. 安裝快
 2. 上手快
 3. 擴展快
@@ -36,18 +34,13 @@ categories:
 
 ### Install MySQL
 
-安裝快，只需幾分鐘就能建立一台 DB。
-
-開始安裝前你需要先有 
+安裝快，只需幾分鐘就能建立一台 DB。開始安裝前你需要先有 
 1. google 的帳號並啟用 GCP
 2. 安裝 cloud SDK
-
 ``` bash
 brew cask install google-cloud-sdk
 ```
-
 安裝 DB 只需開啟終端機，執行下段命令。
-
 ``` bash
 gcloud sql instances create [INSTANCE_NAME] --tier=[MACHINE_TYPE] --region=[REGION]
 ```
@@ -65,20 +58,15 @@ gcloud sql instances create [INSTANCE_NAME] --tier=[MACHINE_TYPE] --region=[REGI
 ### Connection
 
 上手快，你可快速連至 cloud database，官方有完整的範例說明。
-
 這裡介紹透過 cloud sql proxy 快速連到剛建立的 DB。首先，安裝 cloud sql proxy
-
 ``` bash
 gcloud components install cloud_sql_proxy
 ./cloud_sql_proxy -instances=<INSTANCE_CONNECTION_NAME>=tcp:3306
 ```
-
 如下圖所示，你可以找到 INSTANCE_CONNECTION_NAME
 
 ![Alt text](/images/mysqlInstance.png)
-
 再來使用 MySQL workbench 來作個本機連線測試，如果你還沒安裝，可透過以下命令。
-
 ``` bash
 brew cask install mysqlworkbench
 ```

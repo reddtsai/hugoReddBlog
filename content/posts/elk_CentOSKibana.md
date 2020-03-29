@@ -10,8 +10,10 @@ author: Redd Tsai
 authorEmoji: 🐔
 tags:
 - Kibana
+- CentOS
 categories:
 - Elastic
+- OS
 ---
 
 <!--more-->
