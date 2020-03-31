@@ -57,7 +57,7 @@ gcloud sql instances create [INSTANCE_NAME] --tier=[MACHINE_TYPE] --region=[REGI
 
 ### Connection
 
-上手快，你可快速連至 cloud database，官方有完整的範例說明。
+上手快，你可快速連至 cloud database，官方提供多種方式及各程式語言的完整範例說明，減少你摸索的時間。
 這裡介紹透過 cloud sql proxy 快速連到剛建立的 DB。首先，安裝 cloud sql proxy
 ``` bash
 gcloud components install cloud_sql_proxy
@@ -84,3 +84,10 @@ brew cask install mysqlworkbench
 ![Alt text](/images/mysqlInstanceRead1.png)
 
 ![Alt text](/images/mysqlInstanceRead2.png)
+
+### Reference
+
+本次實作的費用
+![Alt text](/images/mysqlInstancePrice.png)
+
+[cloud sql for mysql](https://cloud.google.com/sql/docs/mysql)
