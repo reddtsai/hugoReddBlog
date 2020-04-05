@@ -15,12 +15,12 @@ categories:
 - OS
 ---
 
-後端工程師的工作中很常需要一個常駐程式，幫我們處理非即時的工作或例行性的排程工作，在 Windows Sever 中有大家熟悉的服務和工作排程，那 Unix-Like Server 呢？？在 Unix-Like 系統中比較常聽到的是 Daemon (守護)，它就是系統服務。
-工作上有個需求，要在 Debian 下安裝 cloud sql proxy，然後，要它在背景執行，開機時自己啟動，在這裡作個記錄 。(想要進一步瞭解 Daemon 的大大，可問谷歌先生 "Unix-Like Daemon")
+後端工程師的工作中很常需要一個常駐程式，幫我們處理非即時的工作或例行性的排程工作，在 Windows Sever 中有大家熟悉的服務和工作排程，那 Unix-Like Server 呢？？你可能常常聽到 Daemon (守護)，很難跟 Service 聯想在一起，在 Unix-Like 系統中常會將背景程式稱作 Daemon。接下來透過工作上的實例來說說這個 Daemon。這個工作需求是要在 Debian 下安裝 cloud sql proxy，然後，要它在背景執行，開機時自己啟動，在這裡作個記錄 。
 
 ### Systemd - 服務管理機制
 
 這次工作所使用的系統為 Debian，在 Debian 及其它 Unix-Like 系統中，都有個服務管理機制 systemd，透過這個機制來啟動、關閉與觀察系統服務或你所自定的服務。
+
 可分為幾個類型如下：
 - .service   一般服務
 - .socket    程序資料交換
@@ -30,12 +30,14 @@ categories:
 - .path      偵測特定檔案或目錄
 - .timer     循環執行
 
+
 > 存放位置
 > /usr/lib/systemd/system/：啟動腳本設定檔
 > /run/systemd/system/：執行過程中所產生的服務腳本
 > /etc/systemd/system/：管理員所建立的執行腳本
 
-那要怎麼將 cloud sql proxy 加入 systemd 中？？本次會使用一般服務 cloud_sql_proxy.service，將檔案放入啟動位置 /etc/systemd/system/。
+那要怎麼將 cloud sql proxy 加入 systemd 中？？
+本次會使用一般服務 cloud_sql_proxy.service，將檔案放入啟動位置 /etc/systemd/system/。
 範例 /etc/systemd/system/cloud_sql_proxy.service
 ``` text
 # 服務解釋、相依性
@@ -75,8 +77,10 @@ sudo systemctl stop cloud-sql-proxy.service
 ``` bash
 sudo systemctl status cloud-sql-proxy.service
 ```
-常用
+常用指令
 ``` bash
+-- 重新載入設定檔
+sudo systemctl daemon-reload
 -- 列出所有啟動的 unit
 sudo systemctl
 -- 列出所有 .service
@@ -102,8 +106,8 @@ sudo systemctl list-dependencies
 [Unit]
 Description=taiwan lottery scarper
 [Service]
-WorkingDirectory=opt/app/gce/env/bin
-ExecStart=python /opt/app/app.py
+WorkingDirectory=/opt/app/gce/env/bin
+ExecStart=/opt/app/gce/env/bi/python /opt/app/app.py
 [Install]
 WantedBy=multi-user.target
 ```

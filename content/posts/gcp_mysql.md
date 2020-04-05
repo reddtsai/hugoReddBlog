@@ -34,8 +34,8 @@ categories:
 
 ### Install MySQL
 
-安裝快，只需幾分鐘就能建立一台 DB。開始安裝前你需要先有 
-1. google 的帳號並啟用 GCP
+安裝快，只需幾分鐘就能建立一台 DB。開始安裝前你需要先有：
+1. 啟用 [Google Cloud](https://cloud.google.com/gcp/getting-started) (你需要一組 Google 帳戶和一張信用卡)
 2. 安裝 cloud SDK
 ``` bash
 brew cask install google-cloud-sdk
@@ -51,7 +51,7 @@ gcloud sql instances create [INSTANCE_NAME] --tier=[MACHINE_TYPE] --region=[REGI
 >  
 >   [Creating instances 說明](https://cloud.google.com/sql/docs/mysql/create-instance)
 
-你不習慣冷冰冰的命令，GCP 也提供 [UI](https://console.cloud.google.com) 介面讓你設定。
+另外，你不習慣冷冰冰的命令，GCP 也提供 [UI](https://console.cloud.google.com) 介面讓你設定。
 
 ![Alt text](/images/createMysqlInstance.png)
 
@@ -66,7 +66,7 @@ gcloud components install cloud_sql_proxy
 如下圖所示，你可以找到 INSTANCE_CONNECTION_NAME
 
 ![Alt text](/images/mysqlInstance.png)
-再來使用 MySQL workbench 來作個本機連線測試，如果你還沒安裝，可透過以下命令。
+再來使用 MySQL workbench 來作個本機連線測試，如果你還沒安裝，請先透過以下命令來安裝。
 ``` bash
 brew cask install mysqlworkbench
 ```
@@ -79,7 +79,7 @@ brew cask install mysqlworkbench
 
 ![Alt text](/images/mysqlInstanceHA.png)
 
-效能的部分，這裡拿 cloud sql 其中一個例子作試範，你想將 DB 新增一個讀取位置，增加分流。
+另一個例子，在 cloud sql 新增一個讀取位置，分散流量來提升效能。
 
 ![Alt text](/images/mysqlInstanceRead1.png)
 

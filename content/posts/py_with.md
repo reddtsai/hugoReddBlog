@@ -9,9 +9,9 @@ enableTocContent: true
 author: Redd Tsai
 authorEmoji: 🐔
 tags:
-- python
+- Python
 categories:
-- python
+- Python
 ---
 
 ``` python

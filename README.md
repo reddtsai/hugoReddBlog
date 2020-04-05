@@ -1,3 +1,3 @@
 # hugoReddBlog
 
-redd's blog on reddtsaigithub.io
+Redd's Blog on reddtsaigithub.io, Powered by Hugo and the Zzo theme
