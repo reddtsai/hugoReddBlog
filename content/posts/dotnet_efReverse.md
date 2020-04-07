@@ -11,7 +11,7 @@ authorEmoji: 🐔
 tags:
 - EF
 categories:
-- .Net
+- dotnet
 ---
 
 開發 .NET 應用程式在處理資料時，都會建立模型類別(Model)，特別像是 MVC 的專案，而當資料要儲存到資料庫時，資料庫需要產生對映 Schema 來儲存。這時千萬別馬上開始，先瞭解幾個專有名詞 code first、model first、database first，然後，再利用自動生成工具來減少你的工作，工具像是 PMC Tool - Migrations、POCO Entity ...。
