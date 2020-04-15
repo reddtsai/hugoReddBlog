@@ -1,7 +1,7 @@
 ---
-title: "Dotnet_tool"
+title: "在 Mac 上安裝 dotnet tool"
 date: 2020-04-04T15:35:18+08:00
-description: 
+description: 使用 CLI 來安裝 dotnet-ef
 draft: false
 hideToc: false
 enableToc: true
@@ -21,16 +21,19 @@ categories:
 首先準備好環境，以我為例：
 - macOS 10.15
 - .NET Core 3.1
+
 環境確認後，透過以下指令，列出已安裝的 dotnet tool。
 ``` bash
 dotnet tool list
 dotnet tool list -g
 ```
-> g：全域
+{{< alert theme="success" >}}
+g：全域
+{{< /alert >}}
 
 ### Install
 
-透過 dotnet CLI 來安裝工具，這裡介紹將 dotnet-ef 的全域或本地安裝。
+透過 dotnet CLI 來安裝工具，這裡介紹安裝 dotnet-ef 工具到全域或本地。
 - Global
   ``` bash
   dotnet tool install dotnet-ef -g
