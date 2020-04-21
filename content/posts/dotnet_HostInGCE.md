@@ -139,6 +139,29 @@ sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
 這次範例所製作的腳本，每次部署都會建立全新的 VM 來部署程式，但在容器的部署上，會由 Image 持續來更新 Container，有機會在另外說明。
 {{< /alert >}}
 
+### Load Balance
+
+最後來介紹一下如何建立負載平衡(Load Balance)，因為這次 Host 是使用 GEC，透過 GEC 執行個體群組和剛建立的自動化腳本就可快速完成。
+修改一下腳本 [gce.sh](https://github.com/reddtsai/dotnetLotteryAPI/blob/master/gce.sh)：
+``` shell
+。。。
+
+gcloud compute instance-groups managed create group-aspnet \
+    --base-instance-name aspnet \
+    --size 2 \
+    --template tmp-aspnet-debian \
+    --target-pool pool-aspnet
+
+gcloud compute forwarding-rules create lb-aspnet \
+            --ports 80 \
+            --region asia-east1 \
+            --target-pool pool-aspnet
+```
+
+![Alt text](/images/group-aspnet.png)
+![Alt text](/images/pool-aspnet.png)
+![Alt text](/images/gce-aspnet.png)
+
 ### Reference
 
 [Sample Project](https://github.com/reddtsai/dotnetLotteryAPI)
