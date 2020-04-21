@@ -141,8 +141,7 @@ sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
 
 ### Load Balance
 
-最後來介紹一下如何建立負載平衡(Load Balance)，因為這次 Host 是使用 GEC，透過 GEC 執行個體群組和剛建立的自動化腳本就可快速完成。
-修改一下腳本 [gce.sh](https://github.com/reddtsai/dotnetLotteryAPI/blob/master/gce.sh)：
+最後來介紹一下如何建立負載平衡(Load Balance)，因為這次 Host 是使用 GEC，透過 GEC 執行個體群組和剛建立的自動化腳本就可快速完成，修改一下腳本 [gce.sh](https://github.com/reddtsai/dotnetLotteryAPI/blob/master/gce.sh)：
 ``` shell
 。。。
 
@@ -158,9 +157,9 @@ gcloud compute forwarding-rules create lb-aspnet \
             --target-pool pool-aspnet
 ```
 
-![Alt text](/images/group-aspnet.png)
+e.g.
+
 ![Alt text](/images/pool-aspnet.png)
-![Alt text](/images/gce-aspnet.png)
 
 ### Reference
 
