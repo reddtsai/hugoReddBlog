@@ -28,16 +28,16 @@ categories:
     gcloud config set compute/region [region]
     ```
     {{< alert theme="info" >}}
-    東南亞可選擇新加坡，東北亞可選擇首爾。
-    [Regions and Zones](https://cloud.google.com/compute/docs/regions-zones)
+東南亞可選擇新加坡，東北亞可選擇首爾。
+[Regions and Zones](https://cloud.google.com/compute/docs/regions-zones)
     {{< /alert >}}
 2. 新增一台 VM (Compute Engine)
     ``` bash
     gcloud compute instances create [instance]
     ```
     {{< alert theme="info" >}}
-    機器類型：虛擬化硬體規格。ex. --machine-type=g1-small
-    作業系統：Windows, Linux。ex. --image-family=debian-9
+機器類型：虛擬化硬體規格。ex. --machine-type=g1-small
+作業系統：Windows, Linux。ex. --image-family=debian-9
     {{< /alert >}}
 3. 設定防火墻 (Firewall)
     Enable port 80 for web site
@@ -71,7 +71,7 @@ gcloud compute ssh [instance]
 
 接下來，將建立容器的動作，透過 shell script 製作成腳本。後續你可將這個腳本加入版本控制，持續更新部署。
 使用者測試環境，Create_SIT_GCE.sh。
-``` bash
+``` shell
 MY_INSTANCE_NAME="sit-vm"
 ZONE=asia-east1-a
 
@@ -83,7 +83,7 @@ gcloud compute instances create $MY_INSTANCE_NAME \
     --zone $ZONE \
 ```
 營運環境，Create_PRD_GCE.sh。
-``` bash
+``` shell
 gcloud config set compute/zone asia-east1-a
 
 gcloud config set compute/region asia-east1
