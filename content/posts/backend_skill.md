@@ -36,7 +36,7 @@ categories:
 - Programming  
     Python、Golang、[.NET](https://reddtsai.github.io/zh/categories/dotnet/)、Node.js、Git...
 - Test  
-    Unit、Intergration
+    Unit、Intergration、[Load](https://reddtsai.github.io/zh/categories/Test/)
 - Deployment  
     CI、CD
 - Other
