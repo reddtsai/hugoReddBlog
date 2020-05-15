@@ -32,11 +32,14 @@ categories:
     GCP:App Engine
     Azure:Functions
     AWS:Lambda
+    AliCloud:函数计算
 - VM
     GCP:[Compute Engine](https://reddtsai.github.io/zh/posts/gcp_computeengine/)
     Azure:VM
     AWS:EC2
+    AliCloud:云服务器
 - Container
     GCP:Kubernetes Engine
     Azure:Kubernetes Service
     AWS:Elastic Kubernetes Service
+    AliCloud:容器服务
