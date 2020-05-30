@@ -1,10 +1,4 @@
 ---
-title: "Go_hello"
-date: 2020-05-29T22:49:38+08:00
-draft: true
----
-
----
 title: "初次見面 Golang"
 date: 2020-05-29T22:49:38+08:00
 description: 建立 golang 開發環境，進入第一個專案
@@ -63,7 +57,7 @@ func main() {
 ```
 來看到 hello.go 的內容，作個基本認識：
 1. package
-    - 空間(space)，其它語言稱為 namespace，一個 package 有一個或多個 .go 檔，但請記住要存放在同個目錄下。
+    - 空間(space)，其它語言稱為 namespace，一個 package 有一個或多個 .go 檔，但請記住要存放在同個目錄下(c# 很愛建目錄🤨🤨)。
     - 命名(naming)，建立 package 第一步是命名，請先參考 [package names](https://blog.golang.org/package-names) 瞭解命名規則。
 2. import
     - 導入 local 或 remote 套件。
@@ -71,6 +65,7 @@ func main() {
     - 名稱(name)，func name()
     - 輸入(input)，func(input)
     - 輸出(output)，func() (output)
+
 執行 hello.go 顯示 hello world
 ``` bash
 go run hello.go
@@ -101,8 +96,13 @@ func TestHello(t *testing.T) {
 ```
 執行測試
 ``` bash
-go run hello.go
+go test -v
 ```
+
+### Tour of Go
+
+如果你是第一次學習程式，對 Go 毫無概念，可從線上 Tour 開始。
+[Tour of Go](https://tour.golang.org/welcome/1)
 
 ### Editer
 
@@ -111,11 +111,6 @@ go run hello.go
     至[官網](https://code.visualstudio.com/download)下載最新的安裝程式，執行並安裝。
 2. 安裝 Go 擴充工具
     開啟 Visual Studio Code，移至 Extensions 頁面，安裝 Go。
-
-### Tour of Go
-
-如果你是第一次學習程式，對 Go 毫無概念，可從線上 Tour 開始。
-[Tour of Go](https://tour.golang.org/welcome/1)
 
 ### Reference
 
