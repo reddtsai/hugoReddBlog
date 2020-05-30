@@ -61,6 +61,15 @@ npm run serve
 可以看到 Vue 歡迎畫面(http://localhost:8080/)
 ![Alt text](/images/vue.png)
 
+
+###  Code Editing
+
+當環境和專案都準備就緒，介紹一個免費且功能強大的程式碼編輯器 [Visual Studio Code](https://code.visualstudio.com)，讓你編輯專案更有效率。
+1. 下載安裝
+    至[官網](https://code.visualstudio.com/download)下載最新的安裝程式，執行並安裝。
+2. 安裝 Vue 擴充工具 Vetur
+    開啟 Visual Studio Code，移至 Extensions 頁面，安裝 Vetur
+
 ### Reference
 
 [Vue.js](https://vuejs.org)
