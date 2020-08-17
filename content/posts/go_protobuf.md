@@ -127,7 +127,7 @@ func main() {
 
 {{< alert theme="warning" >}}
 這裡特別需注意 grpc，protobuf 和 protoc-gen-go 版本是否相容。
-例如 grpc 的版本較高，可能會有找不到方法的問題 proto.Marshal: missing method ProtoReflect。
+假設當中某一個的版本較高，可能會有找不到方法的問題 proto.Marshal: missing method ProtoReflect。
 {{< /alert >}}
 
 ### Polymorphism
