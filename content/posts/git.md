@@ -18,6 +18,12 @@ categories:
 git clone
 ```
 
+### remote
+
+``` bash
+git remote show origin
+```
+
 ### branch
 
 ``` bash
@@ -40,6 +46,12 @@ git checkout -b
 ```
 ``` bash
 git checkout --track
+```
+
+### fetch
+
+``` bash
+git fetch origin
 ```
 
 ### log

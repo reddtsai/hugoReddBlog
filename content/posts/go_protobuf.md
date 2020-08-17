@@ -1,5 +1,5 @@
 ---
-title: "使用 Protocol Buffers 結構化資料"
+title: "使用 Protocol Buffers 結構化資料 In Go"
 date: 2020-07-19T23:37:24+08:00
 description: how to use protocol buffers with go
 draft: false
@@ -124,6 +124,11 @@ func main() {
 	fmt.Println(newUser)
 }
 ```
+
+{{< alert theme="warning" >}}
+這裡特別需注意 grpc，protobuf 和 protoc-gen-go 版本是否相容。
+例如 grpc 的版本較高，可能會有找不到方法的問題 proto.Marshal: missing method ProtoReflect。
+{{< /alert >}}
 
 ### Polymorphism
 
